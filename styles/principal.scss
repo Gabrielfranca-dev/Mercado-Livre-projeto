@@ -1,0 +1,19 @@
+$amarelo: rgb(255, 230, 0);
+$preto: rgba(0, 0, 0, 0.898);
+$preto-claro: rgba(0, 0, 0, 0.55);
+$branco: hwb(0 100% 0%);
+$azul: rgb(66, 139, 250);
+$azul-claro: #D9E7FA;
+$verde: rgb(0, 166, 80);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('Proxima Nova'), url('../fonts/Fontspring-DEMO-proximanovacond-regular.otf') format('opentype');
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, 'Roboto', Arial, sans-serif, sans-serif;;
+}

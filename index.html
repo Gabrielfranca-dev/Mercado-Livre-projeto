@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/principal.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/header/Mercado-Livre-Icon-Logo-Vector.svg-.png" type="image/x-icon">
+    <style>
+        /* Estilo para a div de alerta */
+        .alerta {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .alerta button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Oferta do dia | Mercadolivre Brasil</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!-- 1 -->
+            <div>
+                <a href="#"><div></div></a>
+            </div>
+            <!-- 2 -->
+            <div>
+                <form method="post" onclick="borda()" id="borda">
+                    <input type="text" placeholder="Buscar produtos, marcas e muito mais…">
+                    <input type="button">
+                </form>
+            </div>
+            <!-- 3 -->
+            <div>
+                <a href="#"><img src="imgs/header/meli+.jpg"></a>
+            </div>
+            <!-- 4 -->
+            <div>
+                <img src="imgs/header/pin.png">
+                <p>Informe seu</p>
+                <p>CEP</p>
+            </div>
+            <!-- 5 -->
+            <div>
+                <ul>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Cupons</a></li>
+                    <li><a href="#">Supermercado</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Mercado Play<span>GRÁTIS</span></a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <!-- 6 -->
+            <div>
+                <ul>
+                    <li><a href="#">Crie a sua conta</a></li>
+                    <li><a href="#">Entrer</a></li>
+                    <li><a href="#">Compras<img src="imgs/header/carrinho-de-compras.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="imgs/main/swiper/1.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/2.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/3.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/4.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/5.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/6.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/7.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/8.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/9.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/10.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"></a><img src="imgs/main/swiper/11.jpg"></a></div>
+            </div>
+            <div class="swiper-button-next desabilitado"></div>
+            <div class="swiper-button-prev desabilitado"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <section>
+            <div class="gradient"></div>
+            <div class="cards_1" id="bnt1">
+                <input type="button" class="button-cards" onclick="button_cards()">
+                <div>
+                    <h3>Frete grátis</h3>
+                    <img src="imgs/main/cards/new-buyer.svg">
+                    <p>Benefício por ser sua primeira compra.</p>
+                    <input type="button" value="Mostrar produtos">
+                </div>
+
+                <div>
+                    <h3>Entre na sua conta</h3>
+                    <img src="imgs/main/cards/registration-da.svg">
+                    <p>Aproveite ofertas para comprar tudo que quiser.</p>
+                    <input type="button" value="Entrar na sua conta">
+                </div>
+
+                <div>
+                    <h3>Insira sua localização</h3>
+                    <img src="imgs/main/cards/location.svg">
+                    <p>Confira os custos e prazos de entrega.</p>
+                    <input type="button" value="Inserir localização">
+                </div>
+
+                <div>
+                    <h3>Meios de pagamento</h3>
+                    <img src="imgs/main/cards/payment-methods.svg">
+                    <p>Pague suas compras com rapidez e segurança.</p>
+                    <input type="button" value="Mostrar meios">
+                </div>
+
+                <div>
+                    <h3>Menos de <strong>R$100</strong></h3>
+                    <img src="imgs/main/cards/mlb-low-price-product.svg">
+                    <p>Confira produtos com preços baixos.</p>
+                    <input type="button" value="Mostrar produtos">
+                </div>
+
+                <div>
+                    <h3>Mais vendidos</h3>
+                    <img src="imgs/main/cards/top-sale.svg">
+                    <p>Explore os produtos que são tendência.</p>
+                    <input type="button" value="Ir para Mais vendidos">
+                </div>
+            </div>
+
+            <div class="cards_1 cards_2" id="bnt2">
+                <input type="button" class="button-cards" onclick="button_cards()">
+                <div>
+                    <h3>Meios de pagamento</h3>
+                    <img src="imgs/main/cards/payment-methods.svg">
+                    <p>Pague suas compras com rapidez e segurança.</p>
+                    <input type="button" value="Mostrar meios">
+                </div>
+
+                <div>
+                    <h3>Meenos de <strong>R$100</strong></h3>
+                    <img src="imgs/main/cards/mlb-low-price-product.svg">
+                    <p>Confira produtos com preços baixos.</p>
+                    <input type="button" value="Mostrar produtos">
+                </div>
+
+                <div>
+                    <h3>Mais vendidos</h3>
+                    <img src="imgs/main/cards/top-sale.svg">
+                    <p>Explore os produtos que são tendência.</p>
+                    <input type="button" value="Ir para Mais vendidos">
+                </div>
+
+                <div>
+                    <h3>Compra garantida</h3>
+                    <img src="imgs/main/cards/buy-protected.svg">
+                    <p>Você pode devolver sua compra grátis.</p>
+                    <input type="button" value="Como funciona">
+                </div>
+
+                <div>
+                    <h3>Lojas oficiais</h3>
+                    <img src="imgs/main/cards/store-official.svg">
+                    <p>Suas marcas preferidas.</p>
+                    <input type="button" value="Mostrar lojas">
+                </div>
+
+                <div>
+                    <h3>Nossas categorias</h3>
+                    <img src="imgs/main/cards/categories.svg">
+                    <p>Encontre celulares, roupas, imóveis e muito mais.</p>
+                    <input type="button" value="Ir para Categorias">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>Oferta do dia</h3>
+                <img src="imgs/main/sections/3/shampoo.png">
+                <p>Kit Wella Pro Invigo Enrich Shampoo 1l + Condicionador 1l</p>
+                <span>R$ 546,90</span>
+                <p style="color: rgb(0, 166, 80); font-size: 18px; display: flex; align-items: center;"><strong style="font-size: 32px; font-weight: 400; color: black;">R$ 261,<sup style="font-size: 18px; font-weight: 400; margin-right: 10px;">80</sup></strong> 52% OFF</p>
+                <p style="font-size: 14px; font-weight: 400; margin-right: 10px;">em<mark style="background-color: transparent;">8x R$ 32,62 sem juros</mark></p>
+                <p style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 0.55);"><mark style="color: rgb(0, 166, 80); background-color: transparent; margin-right: 5px;">Frete grátis</mark>por ser sua primeira compra</p>
+            </div>
+
+            <div style="box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);">
+                <div class="primeiro-d">
+                    <h3>Ofertas</h3>
+                    <a href="#">Mostrar todas as ofertas</a>
+                </div>
+
+                <div class="segunda-d">
+                    <input type="button" class="button-cards">
+                    <!-- 1 -->
+                    <div>
+                        <img src="imgs/main/sections/3/D_Q_NP_2X_733836-MLB72533563959_102023-AB.jpg">
+                        <h3>Kit 10 Cuecas Boxer Lupo Cueca Box Algodão Masculina Atacado</h3>
+                        <span>R$ 319,90</span>
+                        <p><strong>R$ 195,<sup>18</sup></strong><verde>39% OFF</verde></p>
+                        <p><verde>Frete grátis</verde>por ser sua primeira compra</p>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <img src="imgs/main/sections/3/D_Q_NP_2X_723689-MLB81284991606_122024-AB.jpg">
+                        <h3>Arma De Gel Elétrica Mp5-m16-ak47 Elite + 5.000 Bolinhas</h3>
+                        <span>R$ 179,90</span>
+                        <p><strong>R$ 104,<sup>34</sup></strong><verde>42% OFF</verde></p>
+                        <p><verde>Frete grátis</verde>por ser sua primeira compra</p>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <img src="imgs/main/sections/3/D_Q_NP_2X_666676-MLB80614581936_112024-AB.jpg">
+                        <h3>Barraca Grande De Camping Automatica Impermeavel 4/5 Pessoas</h3>
+                        <span>R$ 452</span>
+                        <p><strong>R$ 271,<sup>20</sup></strong><verde>40% OFF</verde></p>
+                        <p><verde>Frete grátis</verde>por ser sua primeira compra</p>
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <img src="imgs/main/sections/3/D_Q_NP_2X_826958-MLB52501047593_112022-AB (1).jpg">
+                        <h3>Tênis Masculino Leve Esportivo Sapato Confortável Promoção</h3>
+                        <span>R$ 69,99</span>
+                        <p><strong>R$ 66,<sup>49</sup></strong><verde>5% OFF</verde></p>
+                        <p><verde>Frete grátis</verde>por ser sua primeira compra</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <img src="imgs/main/sections/4/meliplus.png">
+                    <h3>Assine a partir de <mark>R$ 9,<sup>90</sup></mark>/mês</h3>
+                    <a href="#">Assinar o Meli+</a>
+                </div>
+
+                <div>
+                    <h3>Economize em frete, compras e pagamentos, e faça seu dinheiro render</h3>
+
+                    <div>
+                        <span>
+                            <img src="imgs/main/sections/4/free_shipping_2x.png">
+                            <p>Frete grátis em milhões de produtos a partir de R$ 29</p>
+                        </span>
+                        <span>
+                            <img src="imgs/main/sections/4/interest_free_installments_discount_2x.png">
+                            <p>Até 3 parcelas extras sem juros</p>
+                        </span>
+                        <span>
+                            <img src="imgs/main/sections/4/cashback-ml_2x.png">
+                            <p>Cashback em compras e pagamentos</p>
+                        </span>
+                        <span>
+                            <img src="imgs/main/sections/4/money_profit_2x.png">
+                            <p>Seu dinheiro rende 105% do CDI no Mercado Pago</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <img src="imgs/main/sections/5/logo-mercado-play-v3.png">
+                    <p>Agora você pode assistir séries e filmes</p>
+                    <span>GRÁTIS</span>
+                    <a href="#">Acesse o Mercado Play</a>
+                </div>
+
+                <div>
+                    <input type="button" value="Reproduzir">
+                </div>
+            </div>
+        </section>
+
+        <div class="alerta" id="alerta">
+            <button onclick="fecharAlerta()">&times;</button>
+            <h1>Aviso Importante</h1>
+            <p>Este projeto foi criado apenas para fins educacionais. Não se trata de phishing ou qualquer atividade maliciosa. Nenhum dado real será coletado ou armazenado.</p>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 1 -->
+        <div>
+            <div>
+                <img src="imgs/footer/payment.svg">
+                <p>Escolha como pagar</p>
+                <span>Com Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x sem cartão com a Linha de Crédito.</span>
+                <a href="#">Como pagar com Mercado Pago</a>
+            </div>
+
+            <div>
+                <img src="imgs/footer/shipping.svg">
+                <p>Frete grátis por ser sua primeira compra</p>
+                <span>Aproveite este benefício em milhões de produtos.</span>
+            </div>
+
+            <div>
+                <img src="imgs/footer/protected.svg">
+                <p>Segurança, do início ao fim</p>
+                <span>Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, porque você está sempre protegido.</span>
+                <a href="#">Como te protegemos</a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div>
+            <h3>Produtos mais procurados</h3>
+            <ul>
+                <li><a href="#">apple watch</a></li>
+                <li><a href="#">ar condicionado</a></li>
+                <li><a href="#">ar condicionado inverter</a></li>
+                <li><a href="#">bicicletas</a></li>
+                <li><a href="#">cafeteira</a></li>
+                <li><a href="#">computador</a></li>
+                <li><a href="#">fogao 4 boca</a></li>
+                <li><a href="#">fone de ouvido bluetooth</a></li>
+                <li><a href="#">freezer vertical</a></li>
+                <li><a href="#">geladeira frost free</a></li>
+                <li><a href="#">guarda roupa casal</a></li>
+                <li><a href="#">guarda roupa solteiro</a></li>
+                <li><a href="#">ipad</a></li>
+                <li><a href="#">iphone</a></li>
+                <li><a href="#">iphone 8 plus</a></li>
+                <li><a href="#">iphone 11</a></li>
+                <li><a href="#">iphone 13</a></li>
+                <li><a href="#">iphone 13 pro max</a></li>
+                <li><a href="#">iphone 14</a></li>
+                <li><a href="#">iphone 14 pro</a></li>
+                <li><a href="#">iphone 14 pro max</a></li>
+                <li><a href="#">iphone 15</a></li>
+                <li><a href="#">iphone 16</a></li>
+                <li><a href="#">iphone 16 plus</a></li>
+                <li><a href="#">iphone 16 pro</a></li>
+                <li><a href="#">iphone 16 pro max</a></li>
+                <li><a href="#">jbl</a></li>
+                <li><a href="#">microondas</a></li>
+                <li><a href="#">monitor</a></li>
+                <li><a href="#">motorola</a></li>
+                <li><a href="#">nintendo switch</a></li>
+                <li><a href="#">notebook</a></li>
+                <li><a href="#">notebook dell</a></li>
+                <li><a href="#">painel para tv</a></li>
+                <li><a href="#">penteadeira</a></li>
+                <li><a href="#">poco x5 pro</a></li>
+                <li><a href="#">ps4</a></li>
+                <li><a href="#">ps5</a></li>
+                <li><a href="#">redmi note 12</a></li>
+                <li><a href="#">s22 ultra</a></li>
+                <li><a href="#">samsung a54</a></li>
+                <li><a href="#">samsung s23</a></li>
+                <li><a href="#">smartwatch</a></li>
+                <li><a href="#">tablets samsung</a></li>
+                <li><a href="#">tenis masculino</a></li>
+                <li><a href="#">tennis feminino</a></li>
+                <li><a href="#">tv 32 polegadas</a></li>
+                <li><a href="#">tv 50 4k</a></li>
+                <li><a href="#">tv 50 polegadas</a></li>
+                <li><a href="#">ventilador</a></li>
+                <li><a href="#">xbox</a></li>
+                <li><a href="#">xbox series x</a></li>
+                <li><a href="#">xdj</a></li>
+                <li><a href="#">xiaomi</a></li>
+            </ul>                
+        </div>
+        <!-- 3 -->
+        <div>
+            <h3>Pesquise produto por letra inicial</h3>
+            <ul>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>                
+        </div>
+        <!-- 4 -->
+        <div>
+            <input type="button" value="Mais informações" >
+            <i class="fa-solid fa-chevron-up"></i>
+            <ul>
+                <li><a href="#">Trabalhe conosco</a></li>
+                <li><a href="#">Termos e condições</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Como cuidamos da sua privacidade</a></li>
+                <li><a href="#"><div></div>Acessibilidade</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Informações sobre seguros</a></li>
+                <li><a href="#">Programa de Afiliados</a></li>
+                <li><a href="#">Black Friday</a></li>
+            </ul>   
+            <div>
+                <p>Copyright &#169; 1999-2025 Ebazar.com.br LTDA.</p>
+                <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+            </div>          
+        </div>
+    </footer>
+
+    <script>
+        function fecharAlerta() {
+            document.getElementById("alerta").style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/cards.js"></script>
+    <script src="scripts/swiper.js"></script>
+</body>
+</html>

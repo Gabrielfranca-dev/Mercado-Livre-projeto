@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("Proxima Nova"), url("../fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
+}
+body {
+  margin: 0px;
+  font-family: -apple-system, "Roboto", Arial, sans-serif, sans-serif;
+}
+
+footer {
+  margin-top: 325px;
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.102);
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+footer li::after {
+  padding: 0 4px;
+  content: "-";
+  color: #999999;
+}
+footer li:last-child::after {
+  content: none;
+}
+footer a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+}
+footer div {
+  margin: auto;
+  width: 1180px;
+  margin-bottom: 66px;
+  box-sizing: border-box;
+}
+footer div:nth-child(1) {
+  height: 187px;
+  display: flex;
+  margin-top: 76px;
+}
+footer div:nth-child(1) div {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  height: 187px;
+  position: relative;
+}
+footer div:nth-child(1) div p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0px;
+  text-align: center;
+  color: rgb(75, 75, 75);
+}
+footer div:nth-child(1) div span {
+  font-size: 15px;
+  margin: 0px 30px;
+  color: rgb(115, 115, 115);
+}
+footer div:nth-child(1) div a {
+  font-size: 14px;
+  color: #1259C3;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+footer div:nth-child(1) div img {
+  margin: auto;
+  width: 66px;
+  height: 46px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+footer div:nth-child(1) div:first-child {
+  margin-top: 0;
+}
+footer div:nth-child(1) div:first-child::after {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%);
+  content: "|";
+  background-color: #999999;
+  color: transparent;
+  width: 0.1px;
+  height: 80px;
+}
+footer div:nth-child(1) div:last-child::before {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%);
+  content: "|";
+  background-color: #999999;
+  color: transparent;
+  width: 0.1px;
+  height: 80px;
+}
+footer div:nth-child(2) {
+  height: 130px;
+}
+footer div:nth-child(2) h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer div:nth-child(3) {
+  height: 54px;
+  font-weight: 400;
+}
+footer div:nth-child(3) h3 {
+  font-size: 13px;
+  margin: 0;
+}
+footer div:nth-child(3) ul {
+  margin-top: 14px;
+}
+footer div:nth-child(3) li {
+  font-size: 14px;
+}
+footer div:nth-child(4) {
+  height: auto;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(230, 230, 230);
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+footer div:nth-child(4) input {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 30px 0 20px;
+  height: 31px;
+  border: none;
+  background-color: white;
+  border-top: 1px solid rgb(230, 230, 230);
+  border-left: 1px solid rgb(230, 230, 230);
+  border-right: 1px solid rgb(230, 230, 230);
+}
+footer div:nth-child(4) i {
+  position: absolute;
+  top: -23px;
+  left: 54%;
+  color: #666666;
+  font-size: 11px;
+}
+footer div:nth-child(4) ul {
+  width: 1180px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+footer div:nth-child(4) ul li {
+  margin: 10px;
+}
+footer div:nth-child(4) ul li a {
+  color: rgba(0, 0, 0, 0.898);
+  font-size: 13px;
+  display: inline-flex;
+  flex-direction: row;
+}
+footer div:nth-child(4) ul li div {
+  background-image: url("../imgs/footer/accessibility.png");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 30px;
+  margin: 0;
+}
+footer div:nth-child(4) ul li:first-child {
+  margin: 10px 0px;
+}
+footer div:nth-child(4) ul li:last-child {
+  margin: 10px 0px 0px 3px;
+}
+footer div:nth-child(4) ul li::after {
+  content: none;
+}
+footer div:nth-child(4) div {
+  width: 1180px;
+  margin: auto;
+  border: none;
+}
+footer div:nth-child(4) div p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+}/*# sourceMappingURL=footer.css.map */

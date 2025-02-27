@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("Proxima Nova"), url("../fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
+}
+body {
+  margin: 0px;
+  font-family: -apple-system, "Roboto", Arial, sans-serif, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 230, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3803921569);
+}
+header div:first-child {
+  display: grid;
+  grid-template-columns: 162px 588px 390px;
+  gap: 12px 20px;
+}
+header div:first-child div {
+  height: 40px;
+}
+header div:first-child div:nth-child(1) a {
+  width: 162px;
+}
+header div:first-child div:nth-child(1) a div {
+  background-image: url("../imgs/header/logo.png");
+  background-size: 134px 34px;
+  background-repeat: no-repeat;
+}
+header div:first-child div:nth-child(2) {
+  width: 588px;
+}
+header div:first-child div:nth-child(2) form {
+  display: flex;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+header div:first-child div:nth-child(2) input {
+  width: 91%;
+  padding: 10px 60px 10px 15px;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+header div:first-child div:nth-child(2) input[type=button] {
+  background-color: hwb(0 100% 0%);
+  width: 9%;
+  padding: 0;
+  background-image: url("../imgs/header/lupa-arredondada.png");
+  background-repeat: no-repeat;
+  background-size: 17px;
+  text-align: center;
+  background-position-y: 40%;
+  background-position-x: 50%;
+  cursor: pointer;
+}
+header div:first-child div:nth-child(3) {
+  width: 390px;
+  text-align: end;
+}
+header div:first-child div:nth-child(3) img {
+  width: 340px;
+  height: 39px;
+}
+header div:first-child div:nth-child(4) {
+  width: 162px;
+  height: 28px;
+  position: relative;
+}
+header div:first-child div:nth-child(4) p {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+  display: inline-flex;
+  position: absolute;
+  top: -11px;
+}
+header div:first-child div:nth-child(4) p:last-child {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.898);
+  top: -3px;
+}
+header div:first-child div:nth-child(4) img {
+  height: 23px;
+}
+header div:first-child div:nth-child(5) {
+  width: 588px;
+  height: 28px;
+}
+header div:first-child div:nth-child(5) ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+header div:first-child div:nth-child(5) li {
+  height: 28px;
+  text-align: left;
+  margin-right: 15px;
+  display: flex;
+  margin: auto;
+}
+header div:first-child div:nth-child(5) li:first-child {
+  margin-left: 0px;
+  margin-right: 15px;
+  position: relative;
+}
+header div:first-child div:nth-child(5) li:first-child::before {
+  background-image: url("../imgs/header/seta-para-baixo.png");
+  background-size: cover;
+  width: 9px;
+  height: 9px;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: -14px;
+}
+header div:first-child div:nth-child(5) li:nth-child(6) {
+  position: relative;
+}
+header div:first-child div:nth-child(5) li:nth-child(6) span {
+  position: absolute;
+  top: 0px;
+  background-color: #00A650;
+  color: #ffffff;
+  padding: 1px 3px;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  width: 33px;
+  text-align: center;
+  height: 10px;
+}
+header div:first-child div:nth-child(5) li:last-child {
+  margin-right: 0;
+}
+header div:first-child div:nth-child(5) li:hover a {
+  color: rgba(0, 0, 0, 0.55);
+}
+header div:first-child div:nth-child(5) a {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.898);
+  font-weight: 400;
+  font-size: 14px;
+}
+header div:first-child div:nth-child(6) {
+  width: 390px;
+  height: 28px;
+  display: flex;
+  justify-content: end;
+}
+header div:first-child div:nth-child(6) ul {
+  align-items: end;
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+}
+header div:first-child div:nth-child(6) ul li {
+  margin-left: 22px;
+}
+header div:first-child div:nth-child(6) ul li:first-child {
+  margin-left: 0;
+}
+header div:first-child div:nth-child(6) ul li:last-child {
+  margin-right: 40px;
+}
+header div:first-child div:nth-child(6) ul a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.898);
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+}
+header div:first-child div:nth-child(6) ul img {
+  top: -3px;
+  left: 40px;
+  position: absolute;
+  margin-left: 25px;
+  width: 22px;
+  height: 22px;
+}/*# sourceMappingURL=header.css.map */

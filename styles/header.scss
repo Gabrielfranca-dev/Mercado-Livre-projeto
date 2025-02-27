@@ -1,0 +1,218 @@
+@use 'principal' as p;
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: p.$amarelo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 6px 1px #00000061;
+
+    div {
+        &:first-child {
+            display: grid;
+            grid-template-columns: 162px 588px 390px;
+            gap: 12px 20px;
+
+            div{
+                height: 40px;
+
+                &:nth-child(1){
+                    a {
+                        width: 162px;
+
+                        div {
+                            background-image: url('../imgs/header/logo.png');
+                            background-size: 134px 34px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }                  
+                &:nth-child(2){
+                    width: 588px;
+
+                    form {
+                        display: flex;
+                        border-radius: 1px;
+                        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+                    }
+
+                    input {
+                        width: 91%;
+                        padding: 10px 60px 10px 15px;
+                        outline: none;
+                        font-size: 16px;
+                        border: none;
+                        
+                    }
+
+                    input[type='button'] {
+                        background-color: p.$branco;
+                        width: 9%;
+                        padding: 0;
+                        background-image: url('../imgs/header/lupa-arredondada.png');
+                        background-repeat: no-repeat;
+                        background-size: 17px;
+                        text-align: center;
+                        background-position-y: 40%;
+                        background-position-x: 50%;
+                        cursor: pointer;
+                    }
+                }                      
+                &:nth-child(3){
+                    width: 390px;
+                    text-align: end;
+
+                    img {
+                        width: 340px;
+                        height: 39px;
+                    }
+
+                }                  
+                &:nth-child(4){
+                    width: 162px;
+                    height: 28px;
+                    position: relative;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: p.$preto-claro;
+                        display: inline-flex;
+                        position: absolute;
+                        top: -11px;
+
+                        &:last-child {
+                            font-size: 14px;
+                            color: p.$preto;
+                            top: -3px;
+                        }
+                    }
+
+                    img {
+                        height: 23px;
+                    }
+                }                
+                &:nth-child(5){
+                    width: 588px;
+                    height: 28px;
+                    
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        list-style: none;
+                    }
+
+                    li {
+                        height: 28px;
+                        text-align: left;
+                        margin-right: 15px;
+                        display: flex;
+                        margin: auto;
+
+                        &:first-child {
+                            margin-left: 0px;
+                            margin-right: 15px;
+                            position: relative;
+
+                            &::before{
+                                background-image: url('../imgs/header/seta-para-baixo.png');
+                                background-size: cover;
+                                width: 9px;
+                                height: 9px;
+                                content: '';
+                                position: absolute;
+                                bottom: 3px;
+                                right: -14px;
+                            }
+                        }
+
+                        &:nth-child(6) {
+                            position: relative;
+
+                            span{
+                                position: absolute;
+                                top: 0px;
+                                background-color: #00A650;
+                                color: #ffffff;
+                                padding: 1px 3px;
+                                font-size: 8px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                border-radius: 8px;
+                                width: 33px;
+                                text-align: center;
+                                height: 10px;
+                            }
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &:hover a{
+                            color: p.$preto-claro;
+                        }
+                    }
+
+                    a {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: end;
+                        text-decoration: none;
+                        color: p.$preto;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }                
+                &:nth-child(6){
+                    width: 390px;
+                    height: 28px;
+                    display: flex;
+                    justify-content: end;
+
+                    ul {
+                        align-items: end;
+                        display: flex;
+                        list-style: none;
+                        justify-content: right;
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            margin-left: 22px;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            &:last-child {
+                                margin-right: 40px;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: p.$preto;
+                            position: relative;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
+                        img {
+                            top: -3px;
+                            left: 40px;
+                            position: absolute;
+                            margin-left: 25px;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }                
+            }
+        }
+    }
+}
+
