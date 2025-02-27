@@ -2,7 +2,7 @@
 
 Este é um projeto que replica a página inicial do Mercado Livre funcional feita para estudos e pratica do css e html. A página está hospedada no GitHub Pages e pode ser acessada pelo seguinte link:
 
-🔗 [Acessar a página](https://gabriel-jry.github.io/Clone-P-gina-MercadoLivre/)
+🔗 [Acessar a página](https://gabrielfranca-dev.github.io/Mercado-Livre-projeto/)
 
 ## 📌 Características
 - Layout responsivo, adaptando-se a diferentes dispositivos.
@@ -15,11 +15,11 @@ Ao visualizar a página no GitHub Pages, alguns elementos dinâmicos podem não 
 ## 📥 Como executar localmente
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/gabriel-jry/Clone-P-gina-MercadoLivre.git
+   git clone https://gabrielfranca-dev.github.io/Mercado-Livre-projeto
    ```
 2. Acesse o diretório do projeto:
    ```bash
-   cd Clone-P-gina-MercadoLivre
+   cd Mercado-Livre-projeto
    ```
 3. Instale as dependências (caso utilize SCSS):
    ```bash
